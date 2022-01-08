@@ -1,2 +1,2 @@
-# logoxyz
+# Dashboard
 Admin dashboard HTML

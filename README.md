@@ -1,2 +1,2 @@
 # logoxyz
-Logo XYZ HTML
+Admin dashboard HTML

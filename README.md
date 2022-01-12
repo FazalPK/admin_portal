@@ -1,2 +1,2 @@
 # Dashboard
-Admin dashboard HTML
+Admin portal HTML

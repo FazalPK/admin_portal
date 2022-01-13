@@ -11963,6 +11963,15 @@ button.close:focus {
     cursor: pointer;
 }
 
+.charts-css{
+    --color-1:#00F3A6 !important;
+}
+#line-example-1 {
+    height: 30px;
+    margin: 0 auto;
+}
+
+
 .daterangepicker .calendar-table {
     border: 1px solid #fff;
     border-radius: 4px;

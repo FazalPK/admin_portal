@@ -137,22 +137,23 @@ var barChartConfig = {
 	type: 'bar',
 
 	data: {
-		labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+		labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May'],
 		datasets: [{
-			label: 'Orders',
+			label: 'Sales',
 			backgroundColor: window.chartColors.green,
 			borderColor: window.chartColors.green,
-			borderWidth: 1,
-			maxBarThickness: 16,
-			
+			borderRadius: 15,
+			borderWidth: 0,
+			maxBarThickness: 15,
+
 			data: [
-				23,
-				45,
-				76,
-				75,
-				62,
-				37,
-				83
+				80000,
+				85000,
+				76000,
+				82000,
+				62000,
+				37000,
+				83000
 			]
 		}]
 	},
@@ -163,17 +164,13 @@ var barChartConfig = {
 			position: 'bottom',
 			align: 'end',
 		},
-		title: {
-			display: true,
-			text: 'Chart.js Bar Chart Example'
-		},
 		tooltips: {
 			mode: 'index',
 			intersect: false,
 			titleMarginBottom: 10,
 			bodySpacing: 10,
-			xPadding: 16,
-			yPadding: 16,
+			xPadding: 10,
+			yPadding: 10,
 			borderColor: window.chartColors.border,
 			borderWidth: 1,
 			backgroundColor: '#fff',
@@ -212,9 +209,8 @@ var barChartConfig = {
 
 // Generate charts on load
 window.addEventListener('load', function(){
-	
-	var lineChart = document.getElementById('canvas-linechart').getContext('2d');
-	window.myLine = new Chart(lineChart, lineChartConfig);
+
+
 	
 	var barChart = document.getElementById('canvas-barchart').getContext('2d');
 	window.myBar = new Chart(barChart, barChartConfig);

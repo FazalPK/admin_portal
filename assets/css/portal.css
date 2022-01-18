@@ -12688,6 +12688,11 @@ input[type=date]::-webkit-datetime-edit-year-field {
     margin-bottom: 25px;
 }
 
+
+.canvasjs-chart-credit{
+    display: none !important;
+}
+
 .charts-css{
     --color-1:#00F3A6 !important;
 }
@@ -12757,6 +12762,12 @@ input[type=date]::-webkit-datetime-edit-year-field {
 }
 .app-card-stat .stats-content .content p{
     margin-bottom: 0;
+}
+
+
+.app-card-stat .stats-content .stats-graph .canvas-class{
+    width: 60%;
+    float: right;
 }
 
 

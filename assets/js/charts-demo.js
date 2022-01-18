@@ -16,15 +16,14 @@ var randomDataPoint = function(){ return Math.round(Math.random()*100)};
 
 //Area line Chart Demo
 
-var lineChartConfig = {
+var tlSaleConfig = {
 	type: 'line',
 
 	data: {
 		labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'],
 		
 		datasets: [{
-			label: 'Dataset',
-			backgroundColor: "rgba(117,193,129,0.2)", 
+			backgroundColor: "transparent",
 			borderColor: "rgba(117,193,129, 0.8)", 
 			data: [
 				randomDataPoint(),
@@ -41,38 +40,12 @@ var lineChartConfig = {
 		responsive: true,		
 		
 		legend: {
-			display: true,
-			position: 'bottom',
-			align: 'end',
+			display: false,
 		},
 
-		tooltips: {
-			mode: 'index',
-			intersect: false,
-			titleMarginBottom: 10,
-			bodySpacing: 10,
-			xPadding: 16,
-			yPadding: 16,
-			borderColor: window.chartColors.border,
-			borderWidth: 1,
-			backgroundColor: '#fff',
-			bodyFontColor: window.chartColors.text,
-			titleFontColor: window.chartColors.text,
-            callbacks: {
-                label: function(tooltipItem, data) {	                 
-	                return tooltipItem.value + '%';   
-                }
-            },
-            
-
-		},
-		hover: {
-			mode: 'nearest',
-			intersect: true
-		},
 		scales: {
 			xAxes: [{
-				display: true,
+				display: false,
 				gridLines: {
 					drawBorder: false,
 					color: window.chartColors.border,
@@ -83,7 +56,7 @@ var lineChartConfig = {
 				}
 			}],
 			yAxes: [{
-				display: true,
+				display: false,
 				gridLines: {
 					drawBorder: false,
 					color: window.chartColors.border,
@@ -97,6 +70,183 @@ var lineChartConfig = {
 		                return value.toLocaleString() + '%';  
 		            }
 		        },
+			}]
+		}
+	}
+};
+
+var tlExpensesConfig = {
+	type: 'line',
+
+	data: {
+		labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'],
+
+		datasets: [{
+			backgroundColor: "transparent",
+			borderColor: "rgba(117,193,129, 0.8)",
+			data: [
+				randomDataPoint(),
+				randomDataPoint(),
+				randomDataPoint(),
+				randomDataPoint(),
+				randomDataPoint(),
+				randomDataPoint(),
+				randomDataPoint()
+			],
+		}]
+	},
+	options: {
+		responsive: true,
+
+		legend: {
+			display: false,
+		},
+
+		scales: {
+			xAxes: [{
+				display: false,
+				gridLines: {
+					drawBorder: false,
+					color: window.chartColors.border,
+				},
+				scaleLabel: {
+					display: false,
+
+				}
+			}],
+			yAxes: [{
+				display: false,
+				gridLines: {
+					drawBorder: false,
+					color: window.chartColors.border,
+				},
+				scaleLabel: {
+					display: false,
+				},
+				ticks: {
+					beginAtZero: true,
+					userCallback: function(value, index, values) {
+						return value.toLocaleString() + '%';
+					}
+				},
+			}]
+		}
+	}
+};
+
+var tlRevenueConfig = {
+	type: 'line',
+
+	data: {
+		labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'],
+
+		datasets: [{
+			backgroundColor: "transparent",
+			borderColor: "rgba(117,193,129, 0.8)",
+			data: [
+				randomDataPoint(),
+				randomDataPoint(),
+				randomDataPoint(),
+				randomDataPoint(),
+				randomDataPoint(),
+				randomDataPoint(),
+				randomDataPoint()
+			],
+		}]
+	},
+	options: {
+		responsive: true,
+
+		legend: {
+			display: false,
+		},
+
+		scales: {
+			xAxes: [{
+				display: false,
+				gridLines: {
+					drawBorder: false,
+					color: window.chartColors.border,
+				},
+				scaleLabel: {
+					display: false,
+
+				}
+			}],
+			yAxes: [{
+				display: false,
+				gridLines: {
+					drawBorder: false,
+					color: window.chartColors.border,
+				},
+				scaleLabel: {
+					display: false,
+				},
+				ticks: {
+					beginAtZero: true,
+					userCallback: function(value, index, values) {
+						return value.toLocaleString() + '%';
+					}
+				},
+			}]
+		}
+	}
+};
+
+var SdProductsConfig = {
+	type: 'line',
+
+	data: {
+		labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'],
+
+		datasets: [{
+			backgroundColor: "transparent",
+			borderColor: "rgba(117,193,129, 0.8)",
+			data: [
+				randomDataPoint(),
+				randomDataPoint(),
+				randomDataPoint(),
+				randomDataPoint(),
+				randomDataPoint(),
+				randomDataPoint(),
+				randomDataPoint()
+			],
+		}]
+	},
+	options: {
+		responsive: true,
+
+		legend: {
+			display: false,
+		},
+
+		scales: {
+			xAxes: [{
+				display: false,
+				gridLines: {
+					drawBorder: false,
+					color: window.chartColors.border,
+				},
+				scaleLabel: {
+					display: false,
+
+				}
+			}],
+			yAxes: [{
+				display: false,
+				gridLines: {
+					drawBorder: false,
+					color: window.chartColors.border,
+				},
+				scaleLabel: {
+					display: false,
+				},
+				ticks: {
+					beginAtZero: true,
+					userCallback: function(value, index, values) {
+						return value.toLocaleString() + '%';
+					}
+				},
 			}]
 		}
 	}
@@ -349,8 +499,18 @@ var doughnutChartConfig = {
 // Generate charts on load
 window.addEventListener('load', function(){
 	
-	var lineChart = document.getElementById('chart-line').getContext('2d');
-	window.myLine = new Chart(lineChart, lineChartConfig);
+	var tlSale = document.getElementById('totalSale').getContext('2d');
+	window.myLine = new Chart(tlSale, tlSaleConfig);
+
+	var tlExpenses = document.getElementById('totalExpenses').getContext('2d');
+	window.myLine = new Chart(tlExpenses, tlExpensesConfig);
+
+	var tlRevenue = document.getElementById('totalRevenue').getContext('2d');
+	window.myLine = new Chart(tlRevenue, tlRevenueConfig);
+
+	var SdProducts = document.getElementById('SoldProducts').getContext('2d');
+	window.myLine = new Chart(SdProducts, SdProductsConfig);
+
 	
 	var barChart = document.getElementById('chart-bar').getContext('2d');
 	window.myBar = new Chart(barChart, barChartConfig);

@@ -23,7 +23,7 @@
 
     <link id="theme-style" rel="stylesheet" href="assets/css/portal.css">
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+	<script src="assets/js/Chart.js"></script>
 
 
 	<script>
@@ -427,7 +427,8 @@
 											</div>
 											<div class="stats-graph">
 
-												<table id="total_sale" class="charts-css line hide-data"><caption> Line Example #1 </caption> <tbody><tr><td style="--start:0; --size:0.4;"><span class="data"> $ 40K </span></td></tr> <tr><td style="--start:0.4; --size:0.2;"><span class="data"> $ 20K </span></td></tr> <tr><td style="--start:0.2; --size:0.6;"><span class="data"> $ 60K </span></td></tr> <tr><td style="--start:0.6; --size:0.4;"><span class="data"> $ 40K </span></td></tr> <tr><td style="--start:0.4; --size:0.8;"><span class="data"> $ 80K </span></td></tr> <tr><td style="--start:0.8; --size:0.6;"><span class="data"> $ 60K </span></td></tr> <tr><td style="--start:0.6; --size:1;"><span class="data"> $ 100K </span></td></tr></tbody></table>
+												<canvas id="totalSale" class="canvas-class"></canvas>
+
 											</div>
 										</div>
 									</div>
@@ -449,8 +450,7 @@
 												<p class="stats-type">Total Expenses</p>
 											</div>
 											<div class="stats-graph">
-<!--												<img src="assets/img/stats-graph.png" class="img-fluid" alt="total-sale">-->
-												<table id="total_expense" class="charts-css line hide-data"><caption> Line Example #1 </caption> <tbody><tr><td style="--start:0; --size:0.4;"><span class="data"> $ 40K </span></td></tr> <tr><td style="--start:0.4; --size:0.2;"><span class="data"> $ 20K </span></td></tr> <tr><td style="--start:0.2; --size:0.6;"><span class="data"> $ 60K </span></td></tr> <tr><td style="--start:0.6; --size:0.4;"><span class="data"> $ 40K </span></td></tr> <tr><td style="--start:0.4; --size:0.8;"><span class="data"> $ 50K </span></td></tr> <tr><td style="--start:0.8; --size:0.6;"><span class="data"> $ 40K </span></td></tr> <tr><td style="--start:0.6; --size:1;"><span class="data"> $ 40K </span></td></tr></tbody></table>
+												<canvas id="totalExpenses" class="canvas-class"></canvas>
 											</div>
 										</div>
 									</div>
@@ -472,8 +472,7 @@
 												<p class="stats-type">Total Revenue</p>
 											</div>
 											<div class="stats-graph">
-<!--												<img src="assets/img/stats-graph.png" class="img-fluid" alt="total-sale">-->
-												<table id="total_revenue" class="charts-css line hide-data"><caption> Line Example #1 </caption> <tbody><tr><td style="--start:0; --size:0.4;"><span class="data"> $ 40K </span></td></tr> <tr><td style="--start:0.4; --size:0.2;"><span class="data"> $ 20K </span></td></tr> <tr><td style="--start:0.2; --size:0.6;"><span class="data"> $ 60K </span></td></tr> <tr><td style="--start:0.6; --size:0.4;"><span class="data"> $ 40K </span></td></tr> <tr><td style="--start:0.4; --size:0.8;"><span class="data"> $ 40K </span></td></tr> <tr><td style="--start:0.8; --size:0.6;"><span class="data"> $ 20K </span></td></tr> <tr><td style="--start:0.6; --size:1;"><span class="data"> $ 60K </span></td></tr></tbody></table>
+												<canvas id="totalRevenue" class="canvas-class"></canvas>
 											</div>
 										</div>
 									</div>
@@ -495,8 +494,7 @@
 												<p class="stats-type">Sold Products</p>
 											</div>
 											<div class="stats-graph">
-<!--												<img src="assets/img/stats-graph.png" class="img-fluid" alt="total-sale">-->
-												<table id="sold_products" class="charts-css line hide-data"><caption> Line Example #1 </caption> <tbody><tr><td style="--start:0; --size:0.4;"><span class="data"> $ 90K </span></td></tr> <tr><td style="--start:0.4; --size:0.2;"><span class="data"> $ 80K </span></td></tr> <tr><td style="--start:0.2; --size:0.6;"><span class="data"> $ 70K </span></td></tr> <tr><td style="--start:0.6; --size:0.4;"><span class="data"> $ 60K </span></td></tr> <tr><td style="--start:0.4; --size:0.8;"><span class="data"> $ 80K </span></td></tr> <tr><td style="--start:0.8; --size:0.6;"><span class="data"> $ 50K </span></td></tr> <tr><td style="--start:0.6; --size:1;"><span class="data"> $ 10K </span></td></tr></tbody></table>
+												<canvas id="SoldProducts" class="canvas-class"></canvas>
 											</div>
 										</div>
 									</div>
@@ -825,13 +823,14 @@
     <script src="assets/js/index-charts.js"></script> 
     
     <!-- Page Specific JS -->
-    <script src="assets/js/app.js"></script> 
+    <script src="assets/js/app.js"></script>
+	<script src="assets/js/charts-demo.js"></script>
 
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
 
-	<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+	<script src="assets/js/canvas.js"></script>
 
 
 

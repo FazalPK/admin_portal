@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bc4540ec-d8a3-4a78-8fa6-a5fa4e49b0d0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/js/canvas.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/charts.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/portal.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/portal.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/charts-demo.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/charts-demo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +78,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="codeWithMe.voiceChat.enabledByDefault" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../signature" />
     <property name="nodejs_interpreter_path" value="$PROJECT_DIR$/../../../../Program Files/nodejs/node" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
@@ -106,7 +101,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="c145c929-d9bc-42f0-9a6d-2bebb9c0f2b7" name="Default" comment="" />
+      <changelist id="bc4540ec-d8a3-4a78-8fa6-a5fa4e49b0d0" name="Default Changelist" comment="" />
       <created>1642005501307</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -121,6 +116,9 @@
       <workItem from="1642087131056" duration="5670000" />
       <workItem from="1642094460885" duration="1629000" />
       <workItem from="1642096587138" duration="13051000" />
+      <workItem from="1642608598688" duration="868000" />
+      <workItem from="1642614245524" duration="659000" />
+      <workItem from="1643296692059" duration="7000" />
     </task>
     <servers />
   </component>

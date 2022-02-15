@@ -23,7 +23,7 @@
 
     <link id="theme-style" rel="stylesheet" href="assets/css/portal.css">
 
-	<script src="assets/js/Chart.js"></script>
+	<script src="assets/js/charts.js"></script>
 
 
 	<script>
@@ -117,7 +117,7 @@
 							
 							<!--app-card-header-->
 							<div class="app-utility-item d-flex align-items-center">
-								<div id="reportrange" class="ms-auto d-flex align-items-center">
+								<div id="reportrange" class="calenderrange ms-auto d-flex align-items-center">
 									<i class="fa fa-calendar"></i>&nbsp;
 									<span></span> <i class="fa fa-caret-down"></i>
 								</div>
@@ -166,7 +166,7 @@
 	        <div class="sidepanel-inner d-flex flex-column">
 		        <a href="#" id="sidepanel-close" class="sidepanel-close d-xl-none">&times;</a>
 		        <div class="app-branding">
-		            <a class="app-logo" href="#"><img class="logo-icon me-2" src="assets/img/logo.png" alt="logo"></a>
+		            <a class="app-logo" href="index.html"><img class="logo-icon me-2" src="assets/img/logo.png" alt="logo"></a>
 	
 		        </div>
 				<!--app-branding-->  
@@ -177,7 +177,7 @@
 					<ul class="app-menu list-unstyled accordion" id="menu-accordion">
 
 					    <li class="nav-item">
-					        <a class="nav-link active" href="#">
+					        <a class="nav-link active" href="index.html">
 						        <span class="nav-icon">
 									<img src="assets/img/home-lg-alt.png" class="img-fluid" alt="home-lg">
 								</span>
@@ -187,7 +187,7 @@
 					    </li>
 						<!--nav-item-->
 					    <li class="nav-item">
-					        <a class="nav-link" href="#">
+					        <a class="nav-link" href="products.html">
 						        <span class="nav-icon">
 									<img src="assets/img/shopping-bag.png" class="img-fluid" alt="shopping-bag">
 								</span>
@@ -197,7 +197,7 @@
 					    </li>
 						<!--nav-item-->
 					    <li class="nav-item">
-					        <a class="nav-link" href="#">
+					        <a class="nav-link" href="orders.html">
 						        <span class="nav-icon">
 									<img src="assets/img/shopping-cart.png" class="img-fluid" alt="shopping-cart">
 								</span>
@@ -227,7 +227,7 @@
 					    </li>
 						<!--nav-item-->
 					    <li class="nav-item">
-					        <a class="nav-link" href="#">
+					        <a class="nav-link" href="email-campaigns.html">
 						        <span class="nav-icon">
 									<img src="assets/img/envelope-open-text.png" class="img-fluid" alt="envelope-open">
 								</span>
@@ -863,10 +863,10 @@
 			var end = moment();
 		
 			function cb(start, end) {
-				$('#reportrange span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
+				$('.calenderrange span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
 			}
 		
-			$('#reportrange').daterangepicker({
+			$('.calenderrange').daterangepicker({
 				startDate: start,
 				endDate: end,
 				ranges: {

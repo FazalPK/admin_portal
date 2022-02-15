@@ -270,9 +270,6 @@ th {
 }
 
 thead, tbody, tfoot, tr, td, th {
-    border-color: inherit;
-    border-style: solid;
-    border-width: 0
 }
 
 label {
@@ -1974,8 +1971,6 @@ progress {
     --bs-table-hover-color: #212529;
     --bs-table-hover-bg: rgba(0, 0, 0, 0.075);
     width: 100%;
-    margin-bottom: 1rem;
-    color: #212529;
     vertical-align: top;
     border-color: #dee2e6
 }
@@ -2417,7 +2412,6 @@ textarea.form-control-lg {
 .form-select {
     display: block;
     width: 100%;
-    padding: .375rem 2.25rem .375rem .75rem;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
@@ -2431,7 +2425,8 @@ textarea.form-control-lg {
     border-radius: .25rem;
     -webkit-appearance: none;
     -moz-appearance: none;
-    appearance: none
+    appearance: none;
+    padding: 0.9rem 2rem;
 }
 
 .form-select:focus {
@@ -2475,8 +2470,8 @@ textarea.form-control-lg {
 }
 
 .form-check-input {
-    width: 1em;
-    height: 1em;
+    width: 1.8rem;
+    height: 1.8rem;
     margin-top: .25em;
     vertical-align: top;
     background-color: #fff;
@@ -4871,11 +4866,12 @@ textarea.form-control-lg {
 .page-link {
     position: relative;
     display: block;
-    color: #0d6efd;
     text-decoration: none;
-    background-color: #fff;
-    border: 1px solid #dee2e6;
-    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    -webkit-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    -moz-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    -ms-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    -o-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
 @media(prefers-reduced-motion: reduce) {
@@ -4886,15 +4882,10 @@ textarea.form-control-lg {
 
 .page-link:hover {
     z-index: 2;
-    color: #0a58ca;
-    background-color: #e9ecef;
-    border-color: #dee2e6
 }
 
 .page-link:focus {
     z-index: 3;
-    color: #0a58ca;
-    background-color: #e9ecef;
     outline: 0;
     box-shadow: 0 0 0 .25rem rgba(13, 110, 253, .25)
 }
@@ -4906,15 +4897,11 @@ textarea.form-control-lg {
 .page-item.active .page-link {
     z-index: 3;
     color: #fff;
-    background-color: #0d6efd;
-    border-color: #0d6efd
 }
 
 .page-item.disabled .page-link {
     color: #6c757d;
     pointer-events: none;
-    background-color: #fff;
-    border-color: #dee2e6
 }
 
 .page-link {
@@ -8092,8 +8079,8 @@ textarea.form-control-lg {
     }
 
     .flex-sm-fill {
-        -webkit-flex: 1 1 auto !important;
-        flex: 1 1 auto !important
+        /* -webkit-flex: 1 1 auto !important;
+        flex: 1 1 auto !important */
     }
 
     .flex-sm-row {
@@ -11771,19 +11758,17 @@ button.close:focus {
 }
 
 .app-header {
-    height: 60px;
     background-color: #141432;
-    padding: 10px 0;
+    padding: 1rem 1.5rem;
 }
 
-.app-header #reportrange{
-    padding: .375rem .75rem .375rem .75rem;
+.calenderrange{
+    padding: 1rem 2rem;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
     color: #fff;
     background-color: #1B1A43;
-    margin-right: 30px;
     border-radius: .25rem;
     -webkit-border-radius: .25rem;
     -moz-border-radius: .25rem;
@@ -11791,9 +11776,17 @@ button.close:focus {
     -o-border-radius: .25rem;
 }
 
+.page-utilities .col-auto{
+}
+.page-utilities .col-auto:last-child{
+    margin-right: 0;
+}
+.page-utilities .form-select{
+    width: 18rem;
+}
 
 @media(max-width: 992px) {
-    .app-header #reportrange span{
+    .calenderrange span{
         display: none;
     }
 
@@ -12240,9 +12233,6 @@ input[type=date]::-webkit-datetime-edit-year-field {
     top: 23px !important
 }
 
-.app-utility-item {
-    font-size: 0.8rem;
-}
 .app-user-dropdown img{
     margin-right: 10px;
 }
@@ -12497,9 +12487,12 @@ input[type=date]::-webkit-datetime-edit-year-field {
 }
 
 .app-nav .submenu-toggle[aria-expanded=true] .submenu-arrow svg {
-    -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
+    -ms-filter:"progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
     transform: rotate(180deg);
-    -webkit-transform: rotate(180deg)
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
 }
 
 .app-nav .submenu-item {
@@ -12603,7 +12596,7 @@ input[type=date]::-webkit-datetime-edit-year-field {
     height: 100%;
     width: 100%;
     background: #141432;
-    padding-top: 60px;
+    padding-top: 77px;
     overflow-x: hidden
 }
 
@@ -12987,8 +12980,71 @@ input[type=date]::-webkit-datetime-edit-year-field {
 }
 
 .table-search-form .form-control {
-    height: 2rem;
-    min-width: auto
+    min-width: auto;
+    background-color: #1B1A43;
+    border: none;
+    padding: 1.6rem;
+}
+.table-search-form .btn-search{
+    background: linear-gradient(to right, #152D4C, #00EBB7);
+    border: none;
+    color: #fff;
+    padding: 0.9rem 2rem;
+}
+
+.orders-list{
+    background-color: #141432;
+}
+.orders-list .order-item .order-head{
+    padding: 1rem 1.5rem;
+    background-color: #1B1A43;
+}
+.orders-list .order-item .order-head .item{
+    margin-right: 1rem;
+}
+.orders-list .order-item .order-head .order-status{
+    background-color: #182B49;
+    padding: 0.5rem 1rem;
+}
+.orders-list .order-item .order-head span{
+    margin: 0 1rem 0 3rem;
+    color: #00EBB7;
+}
+.orders-list .order-item .order-head .order-author{
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.orders-list .order-item .order-body{
+    padding: 1rem;
+    background-color: #1F1E4A;
+}
+.orders-list .order-item .order-body table th{
+    font-size: 1.2rem;
+    text-decoration: underline;
+    line-height: 1rem;
+    font-weight: 600;
+}
+.orders-list .order-item .order-body table th.menu{
+    text-decoration: none;
+    line-height: 0.3rem;
+    text-align: right;
+    max-width: 25px !important;
+}
+.orders-list .order-item .order-body table th.product-image{
+    min-width: 100px;
+}
+.orders-list .order-item .order-body table .cell{
+    min-width: 125px;
+}
+.app-card-orders-table .table td.cell{
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+.app-card-orders-table .table td.cell .invoice-button{
+    background-color: #182B49;
+    padding: 0.5rem 1rem;
 }
 
 .app-dropdown-menu {
@@ -13001,8 +13057,7 @@ input[type=date]::-webkit-datetime-edit-year-field {
 
 .app-card-orders-table .table .cell {
     border-color: #e7e9ed;
-    color: #5d6778;
-    vertical-align: middle
+    color: #989899;
 }
 
 .app-card-orders-table .cell span {
@@ -13029,19 +13084,20 @@ input[type=date]::-webkit-datetime-edit-year-field {
 }
 
 .app-nav-tabs {
-    background: #fff;
-    padding: 0
+    padding: 0;
+    border-bottom: 1px solid #fff;
 }
 
 .app-nav-tabs .nav-link {
     color: #5d6778;
-    font-size: .875rem;
-    font-weight: bold
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0 1.75rem 0 0;
 }
 
 .app-nav-tabs .nav-link.active {
-    color: #15a362;
-    border-bottom: 2px solid #15a362
+    color: #fff;
+    border-bottom: 2px solid #fff
 }
 
 .app-nav-tabs .nav-link.active:hover {
@@ -13049,23 +13105,35 @@ input[type=date]::-webkit-datetime-edit-year-field {
 }
 
 .app-nav-tabs .nav-link:hover {
-    background: #edfdf6;
-    color: #15a362
+    color: #fff
 }
 
 .app-pagination .pagination {
     font-size: .875rem
 }
 
+.app-pagination .pagination .page-item{
+    margin: 0 0.5rem;
+    width: 2rem;
+    text-align: center;
+}
 .app-pagination .pagination .page-link {
-    color: #5d6778;
+    color: #fff;
     padding: .25rem .5rem
 }
 
-.app-pagination .pagination .page-item.active .page-link {
-    background: #747f94;
+.app-pagination .pagination .page-item .page-link {
+    background: #1F1E4A;
     color: #fff;
-    border-color: #747f94
+    border-radius: 0.25rem;
+    -webkit-border-radius: 0.25rem;
+    -moz-border-radius: 0.25rem;
+    -ms-border-radius: 0.25rem;
+    -o-border-radius: 0.25rem;
+    border: 1px solid transparent;
+}
+.app-pagination .pagination .page-item .page-link:hover{
+    border: 1px solid #e2e2e2;
 }
 
 .app-pagination .pagination .page-item.disabled .page-link {
@@ -13206,7 +13274,7 @@ input[type=date]::-webkit-datetime-edit-year-field {
 
 @media(min-width: 1200px) {
     .table-search-form .form-control {
-        min-width: 300px
+        width: 100%;
     }
 }
 
@@ -13219,6 +13287,186 @@ input[type=date]::-webkit-datetime-edit-year-field {
         font-size: .75rem
     }
 }
+
+
+
+
+
+/*! products-summary  */
+.products-summary .form-select{
+    width: 18rem;
+}
+.products-summary .product-item{
+    background-color: #1F1E4A;
+    padding: 1rem;
+}
+.products-summary .product-item table th{
+    font-weight: 400;
+    text-decoration: underline;
+    font-size: 0.8rem;
+    padding: 0 0 0.5rem 0;
+    vertical-align: middle;
+}
+.products-summary .product-item table th span{
+    text-decoration: none;
+}
+.products-summary .product-item table th.menu{
+    text-decoration: none;
+    line-height: 0.3rem;
+    text-align: right;
+    width: 1.2rem;
+    font-size: 1.5rem;
+    max-width: 25px !important;
+}
+.products-summary .product-item table td{
+    padding: 0 0 0.8rem;
+    min-width: 100px;
+}
+.products-summary .product-item table .prod-name{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.products-summary .product-item table td span{
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+.products-summary .product-item table th.stock{
+    color: #00F3A1;
+}
+.products-summary .app-card{
+    padding: 2rem;
+    text-align: center;
+}
+.products-summary .app-card .products-select{
+    background-color: #fff;
+    color: #808191;
+    width: 100%;
+}
+.products-summary .app-card .stats{
+    font-size: 4.5rem;
+    font-weight: 600;
+}
+.products-summary .app-card-stat .stats-content .stats-graph .canvas-clas{
+    width: 100%;
+}
+.products-summary .app-card .stats-content .content p span{
+    font-size: 1.1rem;
+    color: #00F3A1;
+}
+.products-summary .app-card p.inventory{
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+.products-summary .app-card p.setting-payment{
+    font-size: 0.7rem;
+    width: 10rem;
+    margin: 0 auto;
+}
+
+@media(max-width: 1600px) {
+    .products-summary .form-select {
+        width: 15rem;
+    }
+}
+@media(max-width: 1200px) {
+    .products-summary .app-card .stats, .products-summary .app-card p.inventory{
+        font-size: 2.5rem;
+    }
+    .products-summary .form-select {
+        width: 100%;
+    }
+}
+
+@media(max-width: 575.98px) {
+    .products-summary .app-card .stats, .products-summary .app-card p.inventory{
+        font-size: 1.5rem;
+    }
+}
+
+
+
+/*! email compaign  */
+.email-campaigns .btn-email-campaign{
+    background: linear-gradient(to right, #00EBB7, #152D4C);
+    border: none;
+    color: #fff;
+    padding: 0.9rem 2rem;
+}
+
+.email-campaigns .email-item{
+    background-color: #1F1E4A;
+    padding: 1rem;
+}
+.email-campaigns .email-item table th{
+    line-height: 0.3rem;
+    font-weight: 400;
+    text-decoration: underline;
+    font-size: 0.8rem;
+    padding: 0 0 0.5rem 0;
+    vertical-align: middle;
+}
+.email-campaigns .email-item table th.menu{
+    text-decoration: none;
+    line-height: 0.3rem;
+    text-align: right;
+    width: 1.2rem;
+    font-size: 1.5rem;
+    max-width: 25px !important;
+}
+.email-campaigns .email-item table td{
+    padding: 0;
+}
+.email-campaigns .email-item table .prod-name{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.email-campaigns .email-item table td span{
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+.email-campaigns .email-item table .prod-status{
+    color: #00F3A1;
+}
+
+.email-campaigns .app-card{
+    text-align: center;
+    padding: 1.5rem;
+}
+.email-campaigns .app-card .date{
+    color: #808191;
+    font-size: 0.7rem;
+}
+
+.email-campaigns .app-card .stats{
+    font-size: 4rem;
+    font-weight: 600;
+}
+.email-campaigns .app-card .percent{
+    color: #808191;
+    font-size: 0.8rem;
+}
+.email-campaigns .app-card .view .btn-view{
+    background-color: #182B49;
+    padding: 1rem 3rem;
+    border: 1px solid #e2e2e2;
+    border-radius: 2.5px;
+    -webkit-border-radius: 2.5px;
+    -moz-border-radius: 2.5px;
+    -ms-border-radius: 2.5px;
+    -o-border-radius: 2.5px;
+}
+
+@media(max-width: 992px) {
+    .email-campaigns .email-item table .cell{
+        min-width: 120px;
+        padding: 0 0 0.8rem;
+    }
+    .email-campaigns .form-select{
+        width: 100%;
+        margin:1rem 0;
+    }
+}
+
 
 .app-login .auth-background-holder {
     background: url("../images/background/background-1.jpg") no-repeat center center;

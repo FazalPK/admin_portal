@@ -253,6 +253,64 @@ var SdProductsConfig = {
 };
 
 
+var tlProductsConfig = {
+	type: 'line',
+
+	data: {
+		labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'],
+
+		datasets: [{
+			backgroundColor: "transparent",
+			borderColor: "rgba(117,193,129, 0.8)",
+			data: [
+				randomDataPoint(),
+				randomDataPoint(),
+				randomDataPoint(),
+				randomDataPoint(),
+				randomDataPoint(),
+				randomDataPoint(),
+				randomDataPoint()
+			],
+		}]
+	},
+	options: {
+		responsive: true,
+
+		legend: {
+			display: false,
+		},
+
+		scales: {
+			xAxes: [{
+				display: false,
+				gridLines: {
+					drawBorder: false,
+					color: window.chartColors.border,
+				},
+				scaleLabel: {
+					display: false,
+
+				}
+			}],
+			yAxes: [{
+				display: false,
+				gridLines: {
+					drawBorder: false,
+					color: window.chartColors.border,
+				},
+				scaleLabel: {
+					display: false,
+				},
+				ticks: {
+					beginAtZero: true,
+					userCallback: function(value, index, values) {
+						return value.toLocaleString() + '%';
+					}
+				},
+			}]
+		}
+	}
+};
 
 //Bar Chart Demo
 
@@ -521,6 +579,8 @@ window.addEventListener('load', function(){
 	var doughnutChart = document.getElementById('chart-doughnut').getContext('2d');
 	window.myDoughnut = new Chart(doughnutChart, doughnutChartConfig);
 	
+	var tlProducts = document.getElementById('totalProducts').getContext('2d');
+	window.myLine = new Chart(tlProducts, tlProductsConfig);
 
 });	
 	

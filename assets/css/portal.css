@@ -13477,6 +13477,198 @@ input[type=date]::-webkit-datetime-edit-year-field {
 }
 
 
+
+
+.mail .mail-panel {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.mail .mail-panel .mail-panel-menu {
+	height: calc(100% - 3.5rem);
+}
+
+.mail .mail-panel .mail-panel-footer {
+	height: 3.5rem;
+	display: flex;
+	align-items: center;
+	padding: 0 0.75rem;
+}
+
+.mail .mail-list {
+	min-width: 23rem;
+	max-width: 100%;
+	border-right: 1px solid #edf4f9;
+	width: 100%;
+}
+
+@media only screen and (min-width: 992px) {
+	.mail .mail-list {
+		max-width: 23rem;
+	}
+}
+
+@media only screen and (max-width: 992px) {
+	.mail .mail-list.mobile-hide-list {
+		display: none;
+	}
+}
+
+.mail .mail-list .mail-list-header {
+	height: 2.5rem;
+	border-bottom: 1px solid #edf4f9;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 15px;
+}
+
+.mail .mail-list .mail-list-header .mail-list-icon-folder,.mail .mail-list .mail-list-header .mail-list-icon-delete {
+	cursor: pointer;
+}
+
+.mail .mail-list .mail-list-header .mail-list-icon-folder i,.mail .mail-list .mail-list-header .mail-list-icon-delete i {
+	font-size: 16px;
+}
+
+.mail .mail-list .mail-list-header .mail-list-icon-delete:hover {
+	color: #f46363;
+}
+
+.mail .mail-list .mail-list-header .mail-list-icon-folder:hover {
+	color: #11a1fd;
+}
+
+.mail .mail-list .mail-list-body {
+	height: calc(100% - 2.5rem);
+	overflow-y: auto;
+}
+
+.mail .mail-list-row {
+	cursor: pointer;
+	padding: 1rem;
+	border-bottom: 1px solid #edf4f9;
+}
+
+.mail .mail-list-row .datatable-body-cell-label {
+	height: 100%;
+}
+
+.mail .mail-list-row .datatable-body-cell-label>div {
+	height: 100%;
+}
+
+.mail .mail-list-row:hover {
+	background-color: rgba(204,223,234,0.15);
+}
+
+.mail .mail-list-row.active {
+	background-color: rgba(168,200,219,0.15);
+}
+
+@media only screen and (max-width: 992px) {
+	.mail .mail-list-row .mail-list-row-detail {
+		width: 100%;
+	}
+}
+
+.mail .mail-list-star {
+	display: inline-block;
+	font-size: 1.2rem;
+	cursor: pointer;
+}
+
+.mail .mail-list-clip {
+	font-size: 1.2rem;
+}
+
+.mail .mail-list-row-content {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+@media only screen and (max-width: 992px) {
+	.mail .mail-content {
+		display: none;
+	}
+
+	.mail .mail-content.mobile-show-content {
+		display: block;
+	}
+}
+
+.mail .mail-content .mail-content-wrapper {
+	overflow-y: auto;
+}
+
+.mail .mail-compose {
+	width: 100%;
+}
+
+.mail .mail-content-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1.25rem;
+	padding-bottom: 0;
+}
+
+.mail .mail-content-body {
+	padding-left: 1.25rem;
+	padding-right: 1.25rem;
+	padding-bottom: 1.25rem;
+}
+
+.mail .mail-content-action {
+	font-size: 20px;
+}
+
+.mail .mail-content-file {
+	display: flex;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	border: 1px solid #edf4f9;
+	padding: 0.75rem;
+	border-radius: .375rem;
+	margin-right: 0.75rem;
+	margin-bottom: 0.75rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.mail .mail-content-file {
+		transition: none;
+	}
+}
+
+.mail .mail-content-file i {
+	font-size: 2.2rem;
+	color: #11a1fd;
+}
+
+.mail .mail-content-file:hover,.mail .mail-content-file:focus,.mail .mail-content-file:active,.mail .mail-content-file.active {
+	border-color: transparent;
+	box-shadow: 0px 7px 25px rgba(18,38,63,0.1);
+}
+
+.mail .mail-content-file.active {
+	background-color: #f9fbfd;
+}
+
+.mail .mail-content-reply {
+	border: 2px solid #edf4f9;
+	border-radius: .375rem;
+	height: 7rem;
+	color: #a7c1d2;
+	cursor: pointer;
+	padding: 1rem;
+}
+
+
+
+
+
 .app-login .auth-background-holder {
     background: url("../images/background/background-1.jpg") no-repeat center center;
     background-size: cover;

@@ -12345,17 +12345,26 @@ input[type=date]::-webkit-datetime-edit-year-field {
 
 .app-sidepanel .app-nav-main {
     overflow-y: auto;
-    scrollbar-color: rgba(0, 0, 0, .1) #fff;
-    scrollbar-width: thin
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
 }
 
-.app-sidepanel .app-nav-main::-webkit-scrollbar {
+::-webkit-scrollbar {
     width: 6px;
-    background-color: #2ca272
+    background-color: #2ca272;
+    height: 4px;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
 }
 
-.app-sidepanel .app-nav-main::-webkit-scrollbar-thumb {
-    background-color: rgba(0, 0, 0, .1);
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, .4);
     border-radius: .5rem;
     -webkit-border-radius: .5rem;
     -moz-border-radius: .5rem;

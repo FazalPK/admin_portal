@@ -13669,6 +13669,52 @@ input[type=date]::-webkit-datetime-edit-year-field {
 
 
 
+
+
+
+
+
+
+
+/*! Account Information page */
+
+.account-information-wrapper .acc-info-content{
+    padding: 2rem;
+    background-color: #1F1E4A;
+}
+.account-information-wrapper .acc-info-content button{
+    background: linear-gradient(to right, #00EBB7, #152D4C);
+    border: none;
+    color: #fff;
+    padding: 0.9rem 3rem;
+}
+.account-information-wrapper .acc-info-content .form-control{
+    background-color: transparent;
+    border-color: #33B3E1;
+    padding: 1.8em 1em;
+    color: #fff;
+    font-weight: 500;
+}
+.account-information-wrapper .acc-info-content .form-control:focus{
+    border-color: #00F3A1;
+}
+.account-information-wrapper .notification-list{
+    background-color: #141432;
+}
+.account-information-wrapper .notification-list .item{
+    padding: 2rem;
+    background-color: #1F1E4A;
+}
+.account-information-wrapper .notification-list .item a{
+    color: #00F3A6;
+}
+
+
+
+
+
+
+
 .app-login .auth-background-holder {
     background: url("../images/background/background-1.jpg") no-repeat center center;
     background-size: cover;

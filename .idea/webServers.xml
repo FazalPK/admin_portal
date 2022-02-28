@@ -16,6 +16,13 @@
           </advancedOptions>
         </fileTransfer>
       </webServer>
+      <webServer id="01359e9d-11a3-4a9a-a2f6-5b08a3395597" name="Chem International" url="http://67.227.198.95">
+        <fileTransfer accessType="FTPS" host="67.227.198.95" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
     </option>
   </component>
 </project>

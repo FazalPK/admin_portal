@@ -13714,6 +13714,82 @@ input[type=date]::-webkit-datetime-edit-year-field {
 
 
 
+/*! video course wrapper */
+.video-course-wrapper .video-intro{
+    background-image: url('../img/video-course-bg.png');
+    padding: 2rem 3rem;
+    background-size: cover;
+    position: relative;
+}
+.video-course-wrapper .video-intro p {
+    font-size: 18px;
+    font-weight: 600;
+}
+.video-course-wrapper .video-intro img{
+    position: absolute;
+    right: -2rem;
+    bottom: -2rem;
+}
+.video-course-wrapper .course-content{
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.video-course-wrapper .course-content .item{
+    background-color: #1F1E4A;
+    padding: 1.5rem;
+    width: 17rem;
+    margin-top: 50px;
+}
+.video-course-wrapper .course-content .item img.course{
+    margin: -3.5rem 0 1rem 0;
+}
+.video-course-wrapper .course-content .item .btn{
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.video-course-wrapper .course-content .item .btn-level-1{
+    background-color: rgba(51, 217, 178, .09);
+    color: #33D9B2;
+}
+.video-course-wrapper .course-content .item .btn-level-2{
+    background-color: rgba(52, 152, 219, .09);
+    color: #3498DB;
+}
+.video-course-wrapper .course-content .item .btn-expert{
+    background-color: rgba(255, 121, 63, .09);
+    color: #FF793F;
+}
+.video-course-wrapper .course-content .item .content span{
+    margin-right: 1rem;
+}
+
+@media(max-width: 1400px) {
+    .video-course-wrapper .course-content .item {
+        padding: 0.6rem;
+        width: 15rem;
+    }
+}
+@media(max-width: 600px) {
+    .video-course-wrapper .course-content{
+        display: grid;
+        justify-content: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
 
 .app-login .auth-background-holder {
     background: url("../images/background/background-1.jpg") no-repeat center center;

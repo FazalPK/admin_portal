@@ -23,6 +23,27 @@
           </advancedOptions>
         </fileTransfer>
       </webServer>
+      <webServer id="2c5c6499-99c6-456d-9e26-3af27da93138" name="Stahl  Storage" url="http://67.227.198.95">
+        <fileTransfer accessType="FTPS" host="67.227.198.95" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+      <webServer id="b93abd82-ad7c-4045-914e-b64948f98f7a" name="Medaition services" url="http://67.227.198.95">
+        <fileTransfer accessType="FTPS" host="67.227.198.95" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+      <webServer id="7f377d14-6eb7-41c8-bc93-9e73352a5b89" name="Exact auto Glass" url="http://67.227.198.95">
+        <fileTransfer accessType="FTPS" host="67.227.198.95" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
     </option>
   </component>
 </project>

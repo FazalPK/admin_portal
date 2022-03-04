@@ -13785,6 +13785,62 @@ input[type=date]::-webkit-datetime-edit-year-field {
 
 
 
+/* *profit calculator */
+.profit-calculator-wrapper{
+    padding: 2rem;
+    background-color: #1F1E4A;
+}
+.profit-calculator-wrapper .app-nav-tabs{
+    margin: 0;
+    padding-bottom: 1rem;
+}
+.profit-calculator-wrapper .app-nav-tabs .nav-link{
+    font-size: 1.5rem;
+}
+.profit-calculator-wrapper .app-nav-tabs .nav-link.active{
+    background: #00EBB7;
+    border: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+
+.profit-calculator-wrapper .purchase-content{
+    background-color: #1B1A43;
+    padding: 2rem;
+    margin: 1rem;
+}
+
+.profit-calculator-wrapper .btn-save-cal{
+    background: linear-gradient(to right, #00EBB7, #152D4C);
+    border: none;
+    color: #fff;
+    padding: 0.9rem 3rem;
+}
+.profit-calculator-wrapper form label{
+    font-weight: 600;
+}
+.profit-calculator-wrapper form label span{
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-left: 10px;
+}
+.profit-calculator-wrapper form .form-group{
+    width: 200px;
+}
+.profit-calculator-wrapper form .form-select{
+    background: #fff;
+    padding: 0.6rem;
+    box-shadow: none;
+    outline: none;
+    color: #5d6778;
+
+}
+
+
 
 
 

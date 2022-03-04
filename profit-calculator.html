@@ -192,7 +192,7 @@
 					    </li>
 						<!--nav-item-->
 					    <li class="nav-item">
-					        <a class="nav-link" href="profit-calculator.html">
+					        <a class="nav-link active" href="profit-calculator.html">
 						        <span class="nav-icon">
 									<img src="assets/img/calculator-alt.png" class="img-fluid" alt="calculator">
 								</span>
@@ -229,7 +229,7 @@
 
 						<!--nav-item-->
 					    <li class="nav-item">
-					        <a class="nav-link active" href="account-information.html">
+					        <a class="nav-link" href="account-information.html">
 						        <span class="nav-icon">
 									<img src="assets/img/info-circle.png" class="img-fluid" alt="info circle">
 								</span>
@@ -319,302 +319,179 @@
 	    
 	    <div class="app-content pt-3 p-md-3 p-lg-4">
 		    <div class="container-xl">
-				<h4 class="section-head">Account Information</h4>
+				<h4 class="section-head">Profit Calculator</h4>
 				<p class="date">20-05-2021</p>
 					     
-			   	<div class="account-information-wrapper">
-				   
-					<nav id="account-info-table-tab" class="orders-table-tab app-nav-tabs nav shadow-sm flex-column flex-sm-row mb-4">
+			   	<div class="profit-calculator-wrapper">
 
-						<a class="flex-sm-fill text-sm-center nav-link active" id="account-information-tab" data-bs-toggle="tab" href="#Account_Information" role="tab" aria-controls="account-information" aria-selected="true">Account Information </a>
-
-						<a class="flex-sm-fill text-sm-center nav-link"  id="your-subscription-tab" data-bs-toggle="tab" href="#Your_subscription" role="tab" aria-controls="your-subscription" aria-selected="false">Your subscription</a>
-
-						<a class="flex-sm-fill text-sm-center nav-link" id="invoices-tab" data-bs-toggle="tab" href="#Invoices" role="tab" aria-controls="Invoices" aria-selected="false">Invoices</a>
-
-						<a class="flex-sm-fill text-sm-center nav-link" id="acc-notifications-tab" data-bs-toggle="tab" href="#Acc_Notifications" role="tab" aria-controls="acc-notifications" aria-selected="false">Notifications</a>
-
-						<a class="flex-sm-fill text-sm-center nav-link" id="acc-accounting-tab" data-bs-toggle="tab" href="#Acc_Accounting" role="tab" aria-controls="acc-accounting" aria-selected="false">Accounting</a>
-						
-					</nav>
+					<p>All Calcaulations</p>
 					
-					
-					<div class="tab-content" id="account-info-table-tab-content">
+						<nav id="profit-cal-table-tab" class="profit-cal-tab app-nav-tabs nav shadow-sm flex-column justify-content-end flex-sm-row mb-4">
 
-						<div class="tab-pane fade show active" id="Account_Information" role="tabpanel" aria-labelledby="account-information-tab">
+							<a class="flex-sm-fill text-sm-center nav-link active" id="pound-tab" data-bs-toggle="tab" href="#Pound" role="tab" aria-controls="pound" aria-selected="true">£</a>
+
+							<a class="flex-sm-fill text-sm-center nav-link"  id="dollar-tab" data-bs-toggle="tab" href="#Dollar" role="tab" aria-controls="dollar" aria-selected="false">$</a>
 							
-							<div class="acc-info-content mb-4">
-								<h5 class="mb-5">Basic Information</h5>
+							<button type="submit" class="btn btn-save-cal">Save</button>
+						</nav>
+
+						
+						<div class="tab-content" id="account-info-table-tab-content">
+
+							<div class="tab-pane fade show active" id="Pound" role="tabpanel" aria-labelledby="pound-tab">
 								
-								<form action="#" method="POST" role="form">
-									<div class="row">
+								<div class="cal-content d-flex">
 
-										<div class="col-lg-6 col-md-12">
-											<div class="form-group mb-5">
-												<input type="text" class="form-control" id="" placeholder="First Name">
-											</div>
-										</div>
+									<div class="purchase-content ">
 
-										<div class="col-lg-6 col-md-12">
-											<div class="form-group mb-5">
-											<input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="Last Name">
-											</div>
+										<div class="d-flex justify-content-between">
+											<h5 class="mb-4">Purchase price <span>(Excl. VAT)</span></h5> 
+											<a href="#">Reset</a>
 										</div>
+									
+										<form action="#" method="POST" role="form">
+											<div class="row">
 
-										<div class="col-lg-6 col-md-12">
-											<div class="form-group mb-5">
-												<input type="email" class="form-control" name="" id="" aria-describedby="emailHelpId" placeholder="Email">
-											</div>
-										</div>
+												<div class="col-12 d-flex mb-3 justify-content-between align-items-center">
+													<label for="">Numbers of pices purchased</label>
+													<div class="form-group">
+														<input type="text" class="form-control" id="" placeholder="">
+													</div>
+												</div>
 
-										<div class="col-lg-6 col-md-12">
-											<div class="form-group mb-5">
-												<input type="text" class="form-control" id="" placeholder="Time Zone">
+												<div class="col-12 d-flex mb-3 justify-content-between align-items-center">
+													<label for="">Purchased price <span>total</span></label>
+													<div class="form-group">
+														<input type="text" class="form-control" id="" placeholder="£0.00">
+													</div>
+												</div>
+
+												<div class="col-12 d-flex mb-3 justify-content-between align-items-center">
+													<label for="">Transactions costs <span>total</span></label>
+													<div class="form-group">
+														<input type="text" class="form-control" id="" placeholder="£0.00">
+													</div>
+												</div>
+
+												<div class="col-12 d-flex mb-3 justify-content-between align-items-center">
+													<label for="">Transportation Costs <span>total</span></label>
+													<div class="form-group">
+														<input type="text" class="form-control" id="" placeholder="£0.00">
+													</div>
+												</div>
+
+												<div class="col-12 d-flex mb-3 justify-content-between align-items-center">
+													<label for="">Packaging costs <span>total</span></label>
+													<div class="form-group">
+														<input type="text" class="form-control" id="" placeholder="£0.00">
+													</div>
+												</div>
+
+												<div class="col-12 d-flex mb-5 justify-content-between align-items-center">
+													<label for="">Other price <span>total</span></label>
+													<div class="form-group">
+														<input type="text" class="form-control" id="" placeholder="£0.00">
+													</div>
+												</div>
+													
+												<h5 class="mb-4">Sales costs <span>(Incl. VAT)</span></h5> 
+
+												<div class="col-12 d-flex mb-3 justify-content-between align-items-center">
+													<label for="">Categories</label>
+													<div class="form-group">
+														<select class="form-select form-control">
+															<option selected value="option-1">Option 1</option>
+															<option value="option-2">Option 2</option>
+															<option value="option-3">Option 3</option>
+														</select>
+													</div>
+												</div>
+												
+												<div class="col-12 d-flex mb-3 justify-content-between align-items-center">
+													<label for="">Shipping Method</label>
+													<div class="form-group">
+														<select class="form-select form-control">
+															<option selected value="option-1">Option 1</option>
+															<option value="option-2">Option 2</option>
+															<option value="option-3">Option 3</option>
+														</select>
+													</div>
+												</div>
+												
+												<div class="col-12 d-flex mb-3 justify-content-between align-items-center">
+													<label for="">Select LVB size</label>
+													<div class="form-group">
+														<select class="form-select form-control">
+															<option selected value="option-1">Option 1</option>
+															<option value="option-2">Option 2</option>
+															<option value="option-3">Option 3</option>
+														</select>
+													</div>
+												</div>
+												
+												<div class="col-12 d-flex mb-3 justify-content-between align-items-center">
+													<label for="">Expected Returns</label>
+													<div class="form-group">
+														<input type="text" class="form-control" id="" placeholder="%">
+													</div>
+												</div>
+
+
+												<div class="col-12 d-flex mb-3 justify-content-between align-items-center">
+													<label for="">Expected Return costs per piece</label>
+													<div class="form-group">
+														<input type="text" class="form-control" id="" disabled placeholder="£0.00">
+													</div>
+												</div>
+
 											</div>
-										</div>
+										
+										</form>
+									</div>
+
+									<div class="purchase-content ">
+									
+										<form action="#" method="POST" role="form">
+											<div class="row">
+
+												<div class="col-12 d-flex mb-3 justify-content-between align-items-center">
+													<label for="">Sales (Incl. VAT)</label>
+													<div class="form-group">
+														<input type="text" class="form-control" id="" placeholder="£0.00">
+													</div>
+												</div>
+
+												<div class="col-12 d-flex mb-3 justify-content-between align-items-center">
+													<label for="">Vat rate</label>
+													<div class="form-group">
+														<input type="text" class="form-control" id="" placeholder="%">
+													</div>
+												</div>
+
+											</div>
+										</form>
 
 									</div>
+									
+								</div>
 								
-									<button type="submit" class="btn btn-save-acc">Save</button>
-
-								</form>
-								
-							</div>
-
-							<div class="acc-info-content">
-								<h5 class="mb-5">Password</h5>
-								
-								<form action="#" method="POST" role="form">
-									<div class="row">
-
-										<div class="col-lg-6 col-md-12">
-											<div class="form-group mb-5">
-												<input type="text" class="form-control" id="" placeholder="Current Password">
-											</div>
-										</div>
-
-										<div class="col-lg-6 col-md-12">
-											<div class="form-group mb-5">
-											<input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="New Password">
-											</div>
-										</div>
-
-										<div class="col-lg-6 col-md-12">
-											<div class="form-group mb-5">
-												<input type="text" class="form-control" id="" placeholder="Confirm Password">
-											</div>
-										</div>
-
-									</div>
-								
-									<button type="submit" class="btn btn-save-acc">Save</button>
-
-								</form>
-								
-							</div>
+							</div><!--//tab-pane-->
 							
-						</div><!--//tab-pane-->
-						
-						<div class="tab-pane fade" id="Your_subscription" role="tabpanel" aria-labelledby="your-subscription-tab">
-							
-							<div class="acc-info-content">
-
-								<h5>No Available Subscription</h5>
+							<div class="tab-pane fade" id="Dollar" role="tabpanel" aria-labelledby="dollar-tab">
 								
-							</div>
+								<div class="cal-content">
 
-						</div><!--//tab-pane-->
-						
-						<div class="tab-pane fade" id="Invoices" role="tabpanel" aria-labelledby="invoices-tab">
-							<div class="app-card app-card-orders-table mb-5">
-								<div class="app-card-body">
+									<h5>No Available Subscription</h5>
 									
-									<div class="orders-list">
-										<div class="order-item mt-4">
+								</div>
 
-											<div class="order-body align-items-center">
-												
-												<div class="table-responsive">
-										
-													<table class="table">
-														<tbody>
-															<tr>
-																<th class="cell">Date</th>
-																<th class="cell">Order Number</th>
-																<th class="cell product-image" rowspan="2"><img src="assets/img/order-image.png" class="img-fluid" alt="order-thumb"></th>
-																<th class="cell">Product</th>
-																<th class="cell">Quantity</th>
-																<th class="cell">Country</th>
-																<th class="cell">Order Value</th>
-																<th class="cell">Invoice</th>
-															</tr>
-															<tr>
-																<td class="cell">Nov,15</td>
-																<td class="cell">#876364221</td>
-																<td class="cell">Sony Camera Lens
-																	<br>Variant: Blue</td>
-																<td class="cell">78</td>
-																<td class="cell">NL</td>
-																<td class="cell">72</td>
-																<td class="cell">Not Sent</td>
-																<td class="cell"><a href="#" class="invoice-button">Invoice</a></td>
-															</tr>
-															
-						
-														</tbody>
-													</table>
-												</div><!--//table-responsive-->
-											</div>
+							</div><!--//tab-pane-->
+							
 
-										</div>
-									</div>
-								</div><!--//app-card-body-->		
-							</div><!--//app-card-->
-						</div><!--//tab-pane-->
-						
-						<div class="tab-pane fade" id="Acc_Notifications" role="tabpanel" aria-labelledby="acc-notifications-tab">
-							<div class="app-card app-card-orders-table mb-5">
-								<div class="app-card-body">
-									
-									<div class="notification-list">
+						</div><!--//tab-content-->
+					</div>
 
-										<div class="item mb-3">
-											<h5><u>Notification Heading Lorem Ipsum</u></h5>
 
-											<p class="mb-3">2 hrs ago | Amy Doe</p>
-
-											<p class="mb-3">lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed ultrices dolor, ac maximus ligula. Donec ex orci, mollis ac purus vel, tempor pulvinar justo.  interdum at.</p>
-											
-											<a href="#">View all -></a>
-										</div>
-										<div class="clearfix"></div>
-										<div class="item mb-3">
-											<h5><u>Notification Heading Lorem Ipsum</u></h5>
-
-											<p class="mb-3">2 hrs ago | Amy Doe</p>
-
-											<p class="mb-3">lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed ultrices dolor, ac maximus ligula. Donec ex orci, mollis ac purus vel, tempor pulvinar justo.  interdum at.</p>
-											
-											<a href="#">View all -></a>
-										</div>
-
-									</div>
-								</div><!--//app-card-body-->		
-							</div><!--//app-card-->
-						</div><!--//tab-pane-->
-
-						<div class="tab-pane fade" id="Acc_Accounting" role="tabpanel" aria-labelledby="acc-accounting-tab">
-							<div class="app-card app-card-orders-table mb-5">
-								<div class="app-card-body">
-									
-									<div class="orders-list">
-										<div class="order-item mt-4">
-
-											<div class="order-head d-flex justify-content-start align-items-center">
-												<div class="form-check item">
-												<input type="checkbox" class="form-check-input" name="" id="" value="checkedValue">
-												</div>
-												<div class="order-status item">
-													In Transit
-												</div>
-												<span>Customer</span>
-												<div class="order-author item">
-													WJ Hofman
-												</div>
-											</div>
-											
-											<div class="order-body align-items-center">
-												
-												<div class="table-responsive">
-										
-													<table class="table">
-														<tbody>
-															<tr>
-																<th class="cell">Date</th>
-																<th class="cell">Order Number</th>
-																<th class="cell product-image" rowspan="2"><img src="assets/img/order-image.png" class="img-fluid" alt="order-thumb"></th>
-																<th class="cell">Product</th>
-																<th class="cell">Quantity</th>
-																<th class="cell">Country</th>
-																<th class="cell">Order Value</th>
-																<th class="cell">Invoice</th>
-															</tr>
-															<tr>
-																<td class="cell">Nov,15</td>
-																<td class="cell">#876364221</td>
-																<td class="cell">Sony Camera Lens
-																	<br>Variant: Blue</td>
-																<td class="cell">78</td>
-																<td class="cell">NL</td>
-																<td class="cell">72</td>
-																<td class="cell">Not Sent</td>
-																<td class="cell"><a href="#" class="invoice-button">Invoice</a></td>
-															</tr>
-															
-						
-														</tbody>
-													</table>
-												</div><!--//table-responsive-->
-											</div>
-
-										</div>
-
-										<div class="order-item mt-4">
-
-											<div class="order-head d-flex justify-content-start align-items-center">
-												<div class="form-check item">
-												<input type="checkbox" class="form-check-input" name="" id="" value="checkedValue">
-												</div>
-												<div class="order-status item">
-													In Transit
-												</div>
-												<span>Customer</span>
-												<div class="order-author item">
-													WJ Hofman
-												</div>
-											</div>
-											
-											<div class="order-body align-items-center">
-												
-												<div class="table-responsive">
-										
-													<table class="table">
-														<tbody>
-															<tr>
-																<th class="cell">Date</th>
-																<th class="cell">Order Number</th>
-																<th class="cell product-image" rowspan="2"><img src="assets/img/order-image.png" class="img-fluid" alt="order-thumb"></th>
-																<th class="cell">Product</th>
-																<th class="cell">Quantity</th>
-																<th class="cell">Country</th>
-																<th class="cell">Order Value</th>
-																<th class="cell">Invoice</th>
-															</tr>
-															<tr>
-																<td class="cell">Nov,15</td>
-																<td class="cell">#876364221</td>
-																<td class="cell">Sony Camera Lens
-																	<br>Variant: Blue</td>
-																<td class="cell">78</td>
-																<td class="cell">NL</td>
-																<td class="cell">72</td>
-																<td class="cell">Not Sent</td>
-																<td class="cell"><a href="#" class="invoice-button">Invoice</a></td>
-															</tr>
-															
-						
-														</tbody>
-													</table>
-												</div><!--//table-responsive-->
-											</div>
-
-										</div>
-									</div>
-								</div><!--//app-card-body-->		
-							</div><!--//app-card-->
-						</div><!--//tab-pane-->
-
-					</div><!--//tab-content-->
 
 			   	</div>
 				
@@ -649,34 +526,6 @@
 
 	<script src="assets/js/canvas.js"></script>
 
-	<script type="text/javascript">
-		$(function() {
-		
-			var start = moment().subtract(29, 'days');
-			var end = moment();
-		
-			function cb(start, end) {
-				$('.calenderrange span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
-			}
-		
-			$('.calenderrange').daterangepicker({
-				startDate: start,
-				endDate: end,
-				ranges: {
-				   'Today': [moment(), moment()],
-				   'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
-				   'Last 7 Days': [moment().subtract(6, 'days'), moment()],
-				   'Last 30 Days': [moment().subtract(29, 'days'), moment()],
-				   'This Month': [moment().startOf('month'), moment().endOf('month')],
-				   'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
-				}
-			}, cb);
-		
-			cb(start, end);
-		
-		});
-	</script>
-
-</body>
+ </body>
 </html> 
 

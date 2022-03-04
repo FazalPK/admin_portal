@@ -13796,6 +13796,7 @@ input[type=date]::-webkit-datetime-edit-year-field {
 }
 .profit-calculator-wrapper .app-nav-tabs .nav-link{
     font-size: 1.5rem;
+    margin-bottom: 10px;
 }
 .profit-calculator-wrapper .app-nav-tabs .nav-link.active{
     background: #00EBB7;
@@ -13811,7 +13812,7 @@ input[type=date]::-webkit-datetime-edit-year-field {
 .profit-calculator-wrapper .purchase-content{
     background-color: #1B1A43;
     padding: 2rem;
-    margin: 1rem;
+    height: fit-content;
 }
 
 .profit-calculator-wrapper .btn-save-cal{
@@ -13839,6 +13840,21 @@ input[type=date]::-webkit-datetime-edit-year-field {
     color: #5d6778;
 
 }
+
+.profit-calculator-wrapper .item {
+    padding: 1rem;
+    margin: 10px 5px;
+    background-color: #1F1E4A;
+}
+@media(max-width: 600px) {
+    .profit-calculator-wrapper .app-nav-tabs .nav-link{
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+}
+
+
 
 
 

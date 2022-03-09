@@ -42,6 +42,11 @@ var tlSaleConfig = {
 		legend: {
 			display: false,
 		},
+		elements: {
+			point:{
+				radius: 0
+			}
+		},
 
 		scales: {
 			xAxes: [{
@@ -100,6 +105,11 @@ var tlExpensesConfig = {
 
 		legend: {
 			display: false,
+		},
+		elements: {
+			point:{
+				radius: 0
+			}
 		},
 
 		scales: {
@@ -160,6 +170,11 @@ var tlRevenueConfig = {
 		legend: {
 			display: false,
 		},
+		elements: {
+			point:{
+				radius: 0
+			}
+		},
 
 		scales: {
 			xAxes: [{
@@ -218,6 +233,11 @@ var SdProductsConfig = {
 
 		legend: {
 			display: false,
+		},
+		elements: {
+			point:{
+				radius: 0
+			}
 		},
 
 		scales: {
@@ -279,6 +299,11 @@ var tlProductsConfig = {
 		legend: {
 			display: false,
 		},
+		elements: {
+			point:{
+				radius: 0
+			}
+		},
 
 		scales: {
 			xAxes: [{
@@ -321,9 +346,7 @@ var barChartConfig = {
 		labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'],
 		datasets: [{
 			label: 'Dataset 1',
-			backgroundColor: "rgba(117,193,129,0.8)", 
-			hoverBackgroundColor: "rgba(117,193,129,1)",
-			
+			backgroundColor: "#02D6AB", 
 			
 			data: [
 				randomDataPoint(),
@@ -337,9 +360,7 @@ var barChartConfig = {
 		}, 
 		{
 			label: 'Dataset 2',
-			backgroundColor: "rgba(91,153,234,0.8)", 
-			hoverBackgroundColor: "rgba(91,153,234,1)",
-			
+			backgroundColor: "#02D6AB",
 			
 			data: [
 				randomDataPoint(),
@@ -395,12 +416,12 @@ var barChartConfig = {
 					drawBorder: false,
 					color: window.chartColors.borders,
 				},
-				ticks: {
-		            beginAtZero: true,
-		            userCallback: function(value, index, values) {
-		                return value + '%';  
-		            }
-		        },
+				// ticks: {
+		        //     beginAtZero: true,
+		        //     userCallback: function(value, index, values) {
+		        //         return value + '%';  
+		        //     }
+		        // },
 
 				
 			}]

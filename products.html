@@ -1,56 +1,63 @@
 <!DOCTYPE html>
-<html lang="en"> 
+<html lang="en">
+
 <head>
     <title>Admin Portal</title>
-    
+
     <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <meta name="description" content="Portal - Bootstrap 5 Admin Dashboard Template For Developers">
     <meta name="author" content="Fazal Safeer">
-    
+
     <!-- FontAwesome JS-->
     <script defer src="assets/plugins/fontawesome/js/all.min.js"></script>
-    
-    <!-- App CSS -->  
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/charts.css/dist/charts.min.css">
+    <!-- App CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/charts.css/dist/charts.min.css">
 
     <link id="theme-style" rel="stylesheet" href="assets/css/portal.css">
 
-	<script src="assets/js/charts.js"></script>
+    <script src="assets/js/charts.js"></script>
 
 
 </head>
 
-<body class="app">   	
-    <header class="app-header fixed-top">	 
-		  	            
-        <div class="app-header-inner">  
-	        <div class="container-fluid">
-		        <div class="app-header-content"> 
-		            <div class="row justify-content-between align-items-center">
+<body class="app">
+    <header class="app-header fixed-top">
 
-						<div class="col-auto">
-							<a id="sidepanel-toggler" class="sidepanel-toggler d-inline-block d-xl-none" href="#">
-								<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" role="img"><title>Menu</title><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg>
-							</a>
-						</div>
-						
-						<div class="app-utilities col-auto d-flex justify-content-end align-items-center">
-							
-							<div class="app-utility-item app-user-dropdown d-flex align-items-center">
-								<a href="#"><img src="assets/img/breth.png" alt="user profile"></a>
-								<span><strong>Breth</strong> Founder & CEO at ITO
-									<br>Breth@gmail.com</span>
-							</div>
-							
-							<!-- <div class="app-utility-item app-user-dropdown dropdown">
+        <div class="app-header-inner">
+            <div class="container-fluid">
+                <div class="app-header-content">
+                    <div class="row justify-content-between align-items-center">
+
+                        <div class="col-auto">
+                            <a id="sidepanel-toggler" class="sidepanel-toggler d-inline-block d-xl-none" href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"
+                                    role="img">
+                                    <title>Menu</title>
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10"
+                                        stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <div class="app-utilities col-auto d-flex justify-content-end align-items-center">
+
+                            <div class="app-utility-item app-user-dropdown d-flex align-items-center">
+                                <a href="#"><img src="assets/img/breth.png" alt="user profile"></a>
+                                <span><strong>Breth</strong> Founder & CEO at ITO
+                                    <br>Breth@gmail.com</span>
+                            </div>
+
+                            <!-- <div class="app-utility-item app-user-dropdown dropdown">
 								<a class="dropdown-toggle" id="user-dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><img src="assets/images/user.png" alt="user profile"></a>
 								<ul class="dropdown-menu" aria-labelledby="user-dropdown-toggle">
 									<li><a class="dropdown-item" href="#">Account</a></li>
@@ -59,186 +66,187 @@
 									<li><a class="dropdown-item" href="#">Log Out</a></li>
 								</ul>
 							</div> -->
-							<!--app-user-dropdown--> 
-						</div>
-						<!--app-utilities-->
-					</div>
-					<!--row-->
-	            </div>
-				<!--app-header-content-->
-	        </div>
-			<!--container-fluid-->
+                            <!--app-user-dropdown-->
+                        </div>
+                        <!--app-utilities-->
+                    </div>
+                    <!--row-->
+                </div>
+                <!--app-header-content-->
+            </div>
+            <!--container-fluid-->
         </div>
-		<!--app-header-inner-->
+        <!--app-header-inner-->
 
-        <div id="app-sidepanel" class="app-sidepanel"> 
-	        <div id="sidepanel-drop" class="sidepanel-drop"></div>
-	        <div class="sidepanel-inner d-flex flex-column">
-		        <a href="#" id="sidepanel-close" class="sidepanel-close d-xl-none">&times;</a>
-		        <div class="app-branding">
-		            <a class="app-logo" href="index.html"><img class="logo-icon me-2" src="assets/img/logo.png" alt="logo"></a>
-	
-		        </div>
-				<!--app-branding-->  
-		        
-			    <nav id="app-nav-main" class="app-nav app-nav-main flex-grow-1">
-						
-					<p class="nav-main-head">My store</p>
-					<ul class="app-menu list-unstyled accordion" id="menu-accordion">
+        <div id="app-sidepanel" class="app-sidepanel">
+            <div id="sidepanel-drop" class="sidepanel-drop"></div>
+            <div class="sidepanel-inner d-flex flex-column">
+                <a href="#" id="sidepanel-close" class="sidepanel-close d-xl-none">&times;</a>
+                <div class="app-branding">
+                    <a class="app-logo" href="index.html"><img class="logo-icon me-2" src="assets/img/logo.png"
+                            alt="logo"></a>
 
-					    <li class="nav-item">
-					        <a class="nav-link" href="index.html">
-						        <span class="nav-icon">
-									<img src="assets/img/home-lg-alt.png" class="img-fluid" alt="home-lg">
-								</span>
-								<span class="nav-link-text">Dashboard</span>
-					        </a>
-							<!--nav-link-->
-					    </li>
-						<!--nav-item-->
-					    <li class="nav-item">
-					        <a class="nav-link active" href="#">
-						        <span class="nav-icon">
-									<img src="assets/img/shopping-bag.png" class="img-fluid" alt="shopping-bag">
-								</span>
-								<span class="nav-link-text">Products</span>
-					        </a>
-							<!--nav-link-->
-					    </li>
-						<!--nav-item-->
-					    <li class="nav-item">
-					        <a class="nav-link" href="orders.html">
-						        <span class="nav-icon">
-									<img src="assets/img/shopping-cart.png" class="img-fluid" alt="shopping-cart">
-								</span>
-								<span class="nav-link-text">Orders</span>
-					        </a>
-							<!--nav-link-->
-					    </li>
-						<!--nav-item-->
-					    <li class="nav-item">
-					        <a class="nav-link" href="#">
-						        <span class="nav-icon">
-									<img src="assets/img/customer-invoice.png" class="img-fluid" alt="customer-invoice">
-								</span>
-								<span class="nav-link-text">Customer Invoice</span>
-					        </a>
-							<!--nav-link-->
-					    </li>
-						<!--nav-item-->
-					    <li class="nav-item">
-					        <a class="nav-link" href="#">
-						        <span class="nav-icon">
-									<img src="assets/img/user-alt.png" class="img-fluid" alt="user">
-								</span>
-								<span class="nav-link-text">Customer Care</span>
-					        </a>
-							<!--nav-link-->
-					    </li>
-						<!--nav-item-->
-					    <li class="nav-item">
-					        <a class="nav-link" href="email-campaigns.html">
-						        <span class="nav-icon">
-									<img src="assets/img/envelope-open-text.png" class="img-fluid" alt="envelope-open">
-								</span>
-								<span class="nav-link-text">Email Campaigns</span>
-					        </a>
-							<!--nav-link-->
-					    </li>
-						<!--nav-item-->
-					    <li class="nav-item">
-					        <a class="nav-link" href="#">
-						        <span class="nav-icon">
-									<img src="assets/img/box-full.png" class="img-fluid" alt="box full">
-								</span>
-								<span class="nav-link-text">Product Research</span>
-					        </a>
-							<!--nav-link-->
-					    </li>
-						
-						<p class="nav-main-head">Product Research</p>
+                </div>
+                <!--app-branding-->
 
-						<!--nav-item-->
-					    <li class="nav-item">
-					        <a class="nav-link" href="#">
-						        <span class="nav-icon">
-									<img src="assets/img/truck-container.png" class="img-fluid" alt="trcuk">
-								</span>
-								<span class="nav-link-text">Product Tracker</span>
-					        </a>
-							<!--nav-link-->
-					    </li>
-						<!--nav-item-->
-					    <li class="nav-item">
-					        <a class="nav-link" href="#">
-						        <span class="nav-icon">
-									<img src="assets/img/database.png" class="img-fluid" alt="database">
-								</span>
-								<span class="nav-link-text">Product Database</span>
-					        </a>
-							<!--nav-link-->
-					    </li>
-						<!--nav-item-->
-					    <li class="nav-item">
-					        <a class="nav-link" href="#">
-						        <span class="nav-icon">
-									<img src="assets/img/keyboard.png" class="img-fluid" alt="keyboard">
-								</span>
-								<span class="nav-link-text">Keyword Explorer</span>
-					        </a>
-							<!--nav-link-->
-					    </li>
-						<!--nav-item-->
-					    <li class="nav-item">
-					        <a class="nav-link" href="profit-calculator.html">
-						        <span class="nav-icon">
-									<img src="assets/img/calculator-alt.png" class="img-fluid" alt="calculator">
-								</span>
-								<span class="nav-link-text">Profit Calculator</span>
-					        </a>
-							<!--nav-link-->
-					    </li>
-						
-						<p class="nav-main-head">EDUCTATON</p>
+                <nav id="app-nav-main" class="app-nav app-nav-main flex-grow-1">
 
-						<!--nav-item-->
-					    <li class="nav-item">
-					        <a class="nav-link" href="video-course.html">
-						        <span class="nav-icon">
-									<img src="assets/img/file-video.png" class="img-fluid" alt="video course">
-								</span>
-								<span class="nav-link-text">Video Courses</span>
-					        </a>
-							<!--nav-link-->
-					    </li>
-						<!--nav-item-->
-					    <li class="nav-item">
-					        <a class="nav-link" href="#">
-						        <span class="nav-icon">
-									<img src="assets/img/users-class.png" class="img-fluid" alt="users">
-								</span>
-								<span class="nav-link-text">Education Librar</span>
-					        </a>
-							<!--nav-link-->
-					    </li>
-						<!--nav-item-->
-						
-						<p class="nav-main-head">Account</p>
+                    <p class="nav-main-head">My store</p>
+                    <ul class="app-menu list-unstyled accordion" id="menu-accordion">
 
-						<!--nav-item-->
-					    <li class="nav-item">
-					        <a class="nav-link" href="account-information.html">
-						        <span class="nav-icon">
-									<img src="assets/img/info-circle.png" class="img-fluid" alt="info circle">
-								</span>
-								<span class="nav-link-text">Account Information</span>
-					        </a>
-							<!--nav-link-->
-					    </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">
+                                <span class="nav-icon">
+                                    <img src="assets/img/home-lg-alt.png" class="img-fluid" alt="home-lg">
+                                </span>
+                                <span class="nav-link-text">Dashboard</span>
+                            </a>
+                            <!--nav-link-->
+                        </li>
+                        <!--nav-item-->
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">
+                                <span class="nav-icon">
+                                    <img src="assets/img/shopping-bag.png" class="img-fluid" alt="shopping-bag">
+                                </span>
+                                <span class="nav-link-text">Products</span>
+                            </a>
+                            <!--nav-link-->
+                        </li>
+                        <!--nav-item-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="orders.html">
+                                <span class="nav-icon">
+                                    <img src="assets/img/shopping-cart.png" class="img-fluid" alt="shopping-cart">
+                                </span>
+                                <span class="nav-link-text">Orders</span>
+                            </a>
+                            <!--nav-link-->
+                        </li>
+                        <!--nav-item-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span class="nav-icon">
+                                    <img src="assets/img/customer-invoice.png" class="img-fluid" alt="customer-invoice">
+                                </span>
+                                <span class="nav-link-text">Customer Invoice</span>
+                            </a>
+                            <!--nav-link-->
+                        </li>
+                        <!--nav-item-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span class="nav-icon">
+                                    <img src="assets/img/user-alt.png" class="img-fluid" alt="user">
+                                </span>
+                                <span class="nav-link-text">Customer Care</span>
+                            </a>
+                            <!--nav-link-->
+                        </li>
+                        <!--nav-item-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="email-campaigns.html">
+                                <span class="nav-icon">
+                                    <img src="assets/img/envelope-open-text.png" class="img-fluid" alt="envelope-open">
+                                </span>
+                                <span class="nav-link-text">Email Campaigns</span>
+                            </a>
+                            <!--nav-link-->
+                        </li>
+                        <!--nav-item-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span class="nav-icon">
+                                    <img src="assets/img/box-full.png" class="img-fluid" alt="box full">
+                                </span>
+                                <span class="nav-link-text">Product Research</span>
+                            </a>
+                            <!--nav-link-->
+                        </li>
+
+                        <p class="nav-main-head">Product Research</p>
+
+                        <!--nav-item-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span class="nav-icon">
+                                    <img src="assets/img/truck-container.png" class="img-fluid" alt="trcuk">
+                                </span>
+                                <span class="nav-link-text">Product Tracker</span>
+                            </a>
+                            <!--nav-link-->
+                        </li>
+                        <!--nav-item-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span class="nav-icon">
+                                    <img src="assets/img/database.png" class="img-fluid" alt="database">
+                                </span>
+                                <span class="nav-link-text">Product Database</span>
+                            </a>
+                            <!--nav-link-->
+                        </li>
+                        <!--nav-item-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span class="nav-icon">
+                                    <img src="assets/img/keyboard.png" class="img-fluid" alt="keyboard">
+                                </span>
+                                <span class="nav-link-text">Keyword Explorer</span>
+                            </a>
+                            <!--nav-link-->
+                        </li>
+                        <!--nav-item-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="profit-calculator.html">
+                                <span class="nav-icon">
+                                    <img src="assets/img/calculator-alt.png" class="img-fluid" alt="calculator">
+                                </span>
+                                <span class="nav-link-text">Profit Calculator</span>
+                            </a>
+                            <!--nav-link-->
+                        </li>
+
+                        <p class="nav-main-head">EDUCTATON</p>
+
+                        <!--nav-item-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="video-course.html">
+                                <span class="nav-icon">
+                                    <img src="assets/img/file-video.png" class="img-fluid" alt="video course">
+                                </span>
+                                <span class="nav-link-text">Video Courses</span>
+                            </a>
+                            <!--nav-link-->
+                        </li>
+                        <!--nav-item-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span class="nav-icon">
+                                    <img src="assets/img/users-class.png" class="img-fluid" alt="users">
+                                </span>
+                                <span class="nav-link-text">Education Librar</span>
+                            </a>
+                            <!--nav-link-->
+                        </li>
+                        <!--nav-item-->
+
+                        <p class="nav-main-head">Account</p>
+
+                        <!--nav-item-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="account-information.html">
+                                <span class="nav-icon">
+                                    <img src="assets/img/info-circle.png" class="img-fluid" alt="info circle">
+                                </span>
+                                <span class="nav-link-text">Account Information</span>
+                            </a>
+                            <!--nav-link-->
+                        </li>
 
 
-					    <!-- has-submenu -->
-					    <!-- <li class="nav-item has-submenu">
+                        <!-- has-submenu -->
+                        <!-- <li class="nav-item has-submenu">
 					        <a class="nav-link submenu-toggle" href="#" data-bs-toggle="collapse" data-bs-target="#submenu-2" aria-expanded="false" aria-controls="submenu-2">
 						        <span class="nav-icon">
 									<img src="assets/img/aaaaaaaaaaaaaa.png" class="img-fluid" alt="aaaaaaaaaaaaaa">
@@ -260,12 +268,12 @@
 					        </div>
 					    </li> -->
 
-				    </ul>
-					<!--app-menu-->
-			    </nav>
-				<!--app-nav-->
-				
-			    <!-- <div class="app-sidepanel-footer">
+                    </ul>
+                    <!--app-menu-->
+                </nav>
+                <!--app-nav-->
+
+                <!-- <div class="app-sidepanel-footer">
 				    <nav class="app-nav app-nav-footer">
 					    <ul class="app-menu footer-menu list-unstyled">
 						    <li class="nav-item">
@@ -304,35 +312,58 @@
 					    </ul>
 				    </nav>
 			    </div> -->
-				<!--app-sidepanel-footer-->
-		       
-	        </div>
-			<!--sidepanel-inner-->
-	    </div>
-		<!--app-sidepanel-->
+                <!--app-sidepanel-footer-->
+
+            </div>
+            <!--sidepanel-inner-->
+        </div>
+        <!--app-sidepanel-->
     </header>
-	<!--app-header-->
-    
+    <!--app-header-->
+
     <div class="app-wrapper">
-	    
-	    <div class="app-content pt-3 p-md-3 p-lg-4">
-		    <div class="container-xl">
-				<h4 class="section-head">Products</h4>
-				<p class="date">04-01-2022</p>
-					     
-				<div class="products-summary">
-					<div class="row mb-5 g-2 justify-content-start align-items-center">
+
+        <div class="app-content pt-3 p-md-3 p-lg-4">
+            <div class="container-xl">
+                <h4 class="section-head">Products</h4>
+                <p class="date">04-01-2022</p>
+
+                <div class="products-summary">
+
+                    <div class="stock-inventory mb-5 g-2 justify-content-start align-items-center app-card d-flex">
+                        <div class="item">
+                            <p>Products</p>
+                            <h3>537</h3>
+                        </div>
+                        <div class="item">
+                            <p>Inventory Value</p>
+                            <h3>$479.94</h3>
+                        </div>
+                        <div class="item">
+                            <p>STOCK STATUS</p>
+                            <div class="stock-status d-flex justify-content-between align-items-center">
+                                <h3>0</h3>
+                                <span class="no-stock">No stock</span>
+                                <h3>3</h3>
+                                <span class="low-stock">Low stock</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mb-5 g-2 justify-content-start align-items-center">
 
                         <div class="col-lg-3 col-md-12">
                             <form class="table-search-form row gx-1 align-items-center">
                                 <div class="col">
-                                    <input type="text" id="search-orders" name="searchorders" class="form-control search-orders" placeholder="Search for products">
+                                    <input type="text" id="search-orders" name="searchorders"
+                                        class="form-control search-orders" placeholder="Search for products">
                                 </div>
                                 <div class="col-auto">
                                     <button type="submit" class="btn app-btn-secondary btn-search">Search</button>
                                 </div>
                             </form>
-                        </div><!--//col-->
+                        </div>
+                        <!--//col-->
 
                         <div class="col-lg-3 col-md-12">
                             <select class="form-select">
@@ -349,7 +380,7 @@
                                 <option value="option-3">Fulfilment</option>
                             </select>
                         </div>
-                            
+
                         <div class="col-lg-3 col-md-12">
                             <select class="form-select">
                                 <option selected value="option-1">Sort by: High to Low</option>
@@ -357,12 +388,12 @@
                             </select>
                         </div>
 
-					</div>
+                    </div>
 
                     <!--row-->
                     <div class="row g-4">
 
-                        <div class="col-lg-9">
+                        <div class="col-12">
                             <div class="row">
 
                                 <div class="col-12 mb-3">
@@ -370,7 +401,7 @@
                                         <img src="assets/img/email-wallet.png" class="img-fluid" alt="wallet">
 
                                         <div class="table-responsive d-flex justify-content-between w-100 ms-3">
-                                        
+
                                             <table class="table table-responsive">
                                                 <tbody>
                                                     <tr>
@@ -386,17 +417,19 @@
                                                     </tr>
                                                     <tr>
                                                         <td class="cell prod-name">Leather Wallet
-                                                            <br><span>Variant: Brown</span></td>
+                                                            <br><span>Variant: Brown</span>
+                                                        </td>
                                                         <td class="cell">992</td>
                                                         <td class="cell">Bolo: 992</td>
                                                         <td class="cell">28</td>
                                                         <td class="cell">Nov 14, 2022
-                                                            <br>3.4 Sales a day</td>
+                                                            <br>3.4 Sales a day
+                                                        </td>
                                                         <td class="cell">$22.00</td>
                                                         <td class="cell">$22.00</td>
                                                         <td class="cell">Own</td>
                                                     </tr>
-                
+
                                                 </tbody>
                                             </table>
                                         </div>
@@ -408,7 +441,7 @@
                                         <img src="assets/img/email-wallet.png" class="img-fluid" alt="wallet">
 
                                         <div class="table-responsive d-flex justify-content-between w-100 ms-3">
-                                        
+
                                             <table class="table">
                                                 <tbody>
                                                     <tr>
@@ -424,17 +457,19 @@
                                                     </tr>
                                                     <tr>
                                                         <td class="cell prod-name">Leather Wallet
-                                                            <br><span>Variant: Brown</span></td>
+                                                            <br><span>Variant: Brown</span>
+                                                        </td>
                                                         <td class="cell">992</td>
                                                         <td class="cell">Bolo: 992</td>
                                                         <td class="cell">28</td>
                                                         <td class="cell">Nov 14, 2022
-                                                            <br>3.4 Sales a day</td>
+                                                            <br>3.4 Sales a day
+                                                        </td>
                                                         <td class="cell">$22.00</td>
                                                         <td class="cell">$22.00</td>
                                                         <td class="cell">Own</td>
                                                     </tr>
-                
+
                                                 </tbody>
                                             </table>
                                         </div>
@@ -446,7 +481,7 @@
                                         <img src="assets/img/email-wallet.png" class="img-fluid" alt="wallet">
 
                                         <div class="table-responsive d-flex justify-content-between w-100 ms-3">
-                                        
+
                                             <table class="table">
                                                 <tbody>
                                                     <tr>
@@ -462,17 +497,19 @@
                                                     </tr>
                                                     <tr>
                                                         <td class="cell prod-name">Leather Wallet
-                                                            <br><span>Variant: Brown</span></td>
+                                                            <br><span>Variant: Brown</span>
+                                                        </td>
                                                         <td class="cell">992</td>
                                                         <td class="cell">Bolo: 992</td>
                                                         <td class="cell">28</td>
                                                         <td class="cell">Nov 14, 2022
-                                                            <br>3.4 Sales a day</td>
+                                                            <br>3.4 Sales a day
+                                                        </td>
                                                         <td class="cell">$22.00</td>
                                                         <td class="cell">$22.00</td>
                                                         <td class="cell">Own</td>
                                                     </tr>
-                
+
                                                 </tbody>
                                             </table>
                                         </div>
@@ -484,7 +521,7 @@
                                         <img src="assets/img/email-wallet.png" class="img-fluid" alt="wallet">
 
                                         <div class="table-responsive d-flex justify-content-between w-100 ms-3">
-                                        
+
                                             <table class="table">
                                                 <tbody>
                                                     <tr>
@@ -500,17 +537,19 @@
                                                     </tr>
                                                     <tr>
                                                         <td class="cell prod-name">Leather Wallet
-                                                            <br><span>Variant: Brown</span></td>
+                                                            <br><span>Variant: Brown</span>
+                                                        </td>
                                                         <td class="cell">992</td>
                                                         <td class="cell">Bolo: 992</td>
                                                         <td class="cell">28</td>
                                                         <td class="cell">Nov 14, 2022
-                                                            <br>3.4 Sales a day</td>
+                                                            <br>3.4 Sales a day
+                                                        </td>
                                                         <td class="cell">$22.00</td>
                                                         <td class="cell">$22.00</td>
                                                         <td class="cell">Own</td>
                                                     </tr>
-                
+
                                                 </tbody>
                                             </table>
                                         </div>
@@ -522,7 +561,7 @@
                                         <img src="assets/img/email-wallet.png" class="img-fluid" alt="wallet">
 
                                         <div class="table-responsive d-flex justify-content-between w-100 ms-3">
-                                        
+
                                             <table class="table">
                                                 <tbody>
                                                     <tr>
@@ -538,17 +577,19 @@
                                                     </tr>
                                                     <tr>
                                                         <td class="cell prod-name">Leather Wallet
-                                                            <br><span>Variant: Brown</span></td>
+                                                            <br><span>Variant: Brown</span>
+                                                        </td>
                                                         <td class="cell">992</td>
                                                         <td class="cell">Bolo: 992</td>
                                                         <td class="cell">28</td>
                                                         <td class="cell">Nov 14, 2022
-                                                            <br>3.4 Sales a day</td>
+                                                            <br>3.4 Sales a day
+                                                        </td>
                                                         <td class="cell">$22.00</td>
                                                         <td class="cell">$22.00</td>
                                                         <td class="cell">Own</td>
                                                     </tr>
-                
+
                                                 </tbody>
                                             </table>
                                         </div>
@@ -560,7 +601,7 @@
                                         <img src="assets/img/email-wallet.png" class="img-fluid" alt="wallet">
 
                                         <div class="table-responsive d-flex justify-content-between w-100 ms-3">
-                                        
+
                                             <table class="table">
                                                 <tbody>
                                                     <tr>
@@ -576,17 +617,19 @@
                                                     </tr>
                                                     <tr>
                                                         <td class="cell prod-name">Leather Wallet
-                                                            <br><span>Variant: Brown</span></td>
+                                                            <br><span>Variant: Brown</span>
+                                                        </td>
                                                         <td class="cell">992</td>
                                                         <td class="cell">Bolo: 992</td>
                                                         <td class="cell">28</td>
                                                         <td class="cell">Nov 14, 2022
-                                                            <br>3.4 Sales a day</td>
+                                                            <br>3.4 Sales a day
+                                                        </td>
                                                         <td class="cell">$22.00</td>
                                                         <td class="cell">$22.00</td>
                                                         <td class="cell">Own</td>
                                                     </tr>
-                
+
                                                 </tbody>
                                             </table>
                                         </div>
@@ -597,7 +640,7 @@
                                         <img src="assets/img/email-wallet.png" class="img-fluid" alt="wallet">
 
                                         <div class="table-responsive d-flex justify-content-between w-100 ms-3">
-                                        
+
                                             <table class="table">
                                                 <tbody>
                                                     <tr>
@@ -613,17 +656,19 @@
                                                     </tr>
                                                     <tr>
                                                         <td class="cell prod-name">Leather Wallet
-                                                            <br><span>Variant: Brown</span></td>
+                                                            <br><span>Variant: Brown</span>
+                                                        </td>
                                                         <td class="cell">992</td>
                                                         <td class="cell">Bolo: 992</td>
                                                         <td class="cell">28</td>
                                                         <td class="cell">Nov 14, 2022
-                                                            <br>3.4 Sales a day</td>
+                                                            <br>3.4 Sales a day
+                                                        </td>
                                                         <td class="cell">$22.00</td>
                                                         <td class="cell">$22.00</td>
                                                         <td class="cell">Own</td>
                                                     </tr>
-                
+
                                                 </tbody>
                                             </table>
                                         </div>
@@ -637,7 +682,8 @@
 
                                 <ul class="pagination justify-content-center mb-0">
                                     <li class="page-item disabled">
-                                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true"><</a>
+                                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">
+                                            << /a>
                                     </li>
                                     <li class="page-item active"><a class="page-link" href="#">1</a></li>
                                     <li class="page-item"><a class="page-link" href="#">2</a></li>
@@ -648,145 +694,101 @@
                                         <a class="page-link" href="#">></a>
                                     </li>
                                 </ul>
-                            </nav><!--//app-pagination-->
+                            </nav>
+                            <!--//app-pagination-->
                         </div>
-                        <div class="col-lg-3 col-md-12">
-                            <div class="row">
 
-                                <div class="col-12">
-
-                                    <div class="app-card">
-
-                                        <select class="form-select products-select">
-                                            <option selected value="option-1">Filter</option>
-                                            <option value="option-2">All</option>
-                                            <option value="option-3">Out of Stock</option>
-                                        </select>
-
-                                        <p class="mt-4 mb-0">Products</p>
-                                        <div class="stats">537</div>
-
-                                        <div class="stats-content">
-
-											<div class="content">
-                                                <p><span>+2.5%</span> <i class="fa fa-arrow-up" aria-hidden="true"></i> This month 
-                                                </p>
-											</div>
-
-										</div>
-                                        
-										<!-- <div class="chart-container">
-											<canvas id="canvas-barchart" style="height: 50rem;"></canvas>
-										</div>
-
-                                        <div class="stats-content mt-4">
-											<div class="stats-graph mx-auto">
-												<canvas id="myChart" style="width:100%;height: 12.6rem"></canvas>
-											</div>
-										</div> -->
-
-                                        <p class="mt-5">Inventory Value </p>
-                                        <p class="inventory">$479.94</p>
-                                        <p class="setting-payment">Update your payout method in Settings</p>
-
-									</div>
-
-                                </div>
-
-                            </div>
-                        </div>
-                        
                     </div>
                     <!--row-->
-			    
+
                 </div>
             </div>
             <!--container-fluid-->
-	    </div>
+        </div>
         <!--app-content-->
-	    
-	    <footer class="app-footer">
-		    <div class="container text-center py-3">
-           
-		       
-		    </div>
-	    </footer>
-								<!--app-footer-->
-	    
-    </div>
-								<!--app-wrapper-->    					
 
- 
-    <!-- Javascript -->          
+        <footer class="app-footer">
+            <div class="container text-center py-3">
+
+
+            </div>
+        </footer>
+        <!--app-footer-->
+
+    </div>
+    <!--app-wrapper-->
+
+
+    <!-- Javascript -->
     <script src="assets/plugins/popper.min.js"></script>
-    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>  
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
 
     <!-- Charts JS -->
-    <script src="assets/plugins/chart.js/chart.min.js"></script> 
-    <script src="assets/js/index-charts.js"></script> 
-    
+    <script src="assets/plugins/chart.js/chart.min.js"></script>
+    <script src="assets/js/index-charts.js"></script>
+
     <!-- Page Specific JS -->
     <script src="assets/js/app.js"></script>
-	<script src="assets/js/charts-demo.js"></script>
+    <script src="assets/js/charts-demo.js"></script>
 
-	<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
-	<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
-	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
 
-	<script src="assets/js/canvas.js"></script>
+    <script src="assets/js/canvas.js"></script>
 
 
 
-	<script>
-		var xValues = ["online", "oline", "online"];
-		var yValues = [56, 49, 19];
-		var barColors = [
-			"#37D39D",
-			"#4D4FF1",
-			"#DADADA",
-			"#e8c3b9",
-			"#1e7145"
-		];
+    <script>
+        var xValues = ["online", "oline", "online"];
+        var yValues = [56, 49, 19];
+        var barColors = [
+            "#37D39D",
+            "#4D4FF1",
+            "#DADADA",
+            "#e8c3b9",
+            "#1e7145"
+        ];
 
-		new Chart("myChart", {
-			type: "doughnut",
-			data: {
-				datasets: [{
-					backgroundColor: barColors,
-					data: yValues
-				}]
-			}
-		});
-	</script>
+        new Chart("myChart", {
+            type: "doughnut",
+            data: {
+                datasets: [{
+                    backgroundColor: barColors,
+                    data: yValues
+                }]
+            }
+        });
+    </script>
 
-	<script type="text/javascript">
-		$(function() {
-		
-			var start = moment().subtract(29, 'days');
-			var end = moment();
-		
-			function cb(start, end) {
-				$('.calenderrange span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
-			}
-		
-			$('.calenderrange').daterangepicker({
-				startDate: start,
-				endDate: end,
-				ranges: {
-				   'Today': [moment(), moment()],
-				   'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
-				   'Last 7 Days': [moment().subtract(6, 'days'), moment()],
-				   'Last 30 Days': [moment().subtract(29, 'days'), moment()],
-				   'This Month': [moment().startOf('month'), moment().endOf('month')],
-				   'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
-				}
-			}, cb);
-		
-			cb(start, end);
-		
-		});
-	</script>
+    <script type="text/javascript">
+        $(function () {
+
+            var start = moment().subtract(29, 'days');
+            var end = moment();
+
+            function cb(start, end) {
+                $('.calenderrange span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
+            }
+
+            $('.calenderrange').daterangepicker({
+                startDate: start,
+                endDate: end,
+                ranges: {
+                    'Today': [moment(), moment()],
+                    'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+                    'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+                    'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+                    'This Month': [moment().startOf('month'), moment().endOf('month')],
+                    'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+                }
+            }, cb);
+
+            cb(start, end);
+
+        });
+    </script>
 
 </body>
-</html> 
 
+</html>

@@ -13302,12 +13302,43 @@ input[type=date]::-webkit-datetime-edit-year-field {
 
 
 /*! products-summary  */
+.stock-inventory .item{
+    margin-right: 30px;
+    text-align: left;
+}
+.stock-inventory .item  h3{
+    margin: 0;
+    margin-right: 8px;
+}
+.stock-inventory .item span.no-stock{
+    margin: 0;
+    margin-right: 8px;
+    border-radius: 4px;
+    padding: 0.3rem 0.5rem;
+    color: #37474f;
+    background-color: #eceff1;
+}
+.stock-inventory .item span.low-stock{
+    margin: 0;
+    margin-right: 8px;    
+    border: 0;
+    border-radius: 4px;
+    padding: 0.3rem 0.5rem;
+    color: #e6642c;
+    background-color: #fff1ea;
+}
+
 .products-summary .form-select{
     width: 18rem;
 }
 .products-summary .product-item{
     background-color: #1F1E4A;
     padding: 1rem;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 .products-summary .product-item table th{
     font-weight: 400;
@@ -13383,6 +13414,20 @@ input[type=date]::-webkit-datetime-edit-year-field {
     }
     .products-summary .form-select {
         width: 100%;
+    }
+}
+@media(max-width: 992px) {
+    .products-summary .app-card {
+        padding: 1rem;
+        display: grid !important;
+        justify-content: center !important;
+    }
+    .products-summary .app-card .item{
+        text-align: center;
+        margin: 15px 0;
+    }
+    .products-summary .app-card .item p{
+        margin-bottom: 10px;
     }
 }
 
